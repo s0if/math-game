@@ -52,7 +52,7 @@ const countaier = (timeTimer) => {
 }
 
 const change = () => {
-    let timeTimer = 10;
+    let timeTimer = 60;
     countaier(timeTimer);
     clearInterval(countaier);
     score.textContent = `score ${numscope}`;
