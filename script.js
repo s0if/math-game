@@ -40,7 +40,7 @@ const countaier = (timeTimer) => {
         }
         else {
             timer.classList.remove('d-block');
-            addScore.textContent += numscope
+            addScore.textContent = `your score is: ${numscope}`
             endTime.classList.add('d-flex');
             setTimeout(() => {
                 endTime.classList.remove('d-flex');
@@ -52,8 +52,7 @@ const countaier = (timeTimer) => {
 }
 
 const change = () => {
-
-    let timeTimer = 60;
+    let timeTimer = 10;
     countaier(timeTimer);
     clearInterval(countaier);
     score.textContent = `score ${numscope}`;
